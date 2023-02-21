@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "125450655905",
+    "project_id": "pg-and-mess",
+    "storage_bucket": "pg-and-mess.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125450655905:android:620a93454ed753e97df8e0",
+        "android_client_info": {
+          "package_name": "com.androidaxe.getmypg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125450655905-kvlrs8uaa3p50kq1nqitaif7ntqa8l8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidaxe.getmypg",
+            "certificate_hash": "760c1c397af5f5bcb0beb22838a4db78c835c0b7"
+          }
+        },
+        {
+          "client_id": "125450655905-qnibn5bqk9p6oc7ivqe243h71046jl0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAJi4M7800LXMfWlHmHcaa2eN4Vs_DFnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125450655905-qnibn5bqk9p6oc7ivqe243h71046jl0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
