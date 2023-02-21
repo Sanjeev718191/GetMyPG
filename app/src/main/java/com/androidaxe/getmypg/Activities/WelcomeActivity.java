@@ -23,7 +23,7 @@ public class WelcomeActivity extends AppCompatActivity {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if(auth.getCurrentUser() != null){
             final int[] user = {-1};
-            FirebaseDatabase.getInstance().getReference().child("PGUser").child(auth.getUid()).child("Name").addListenerForSingleValueEvent(new ValueEventListener() {
+            FirebaseDatabase.getInstance().getReference().child("PGUser").child(auth.getUid()).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if(snapshot.exists()){
@@ -36,7 +36,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
                 }
             });
-            FirebaseDatabase.getInstance().getReference().child("PGOwner").child(auth.getUid()).child("Name").addListenerForSingleValueEvent(new ValueEventListener() {
+            FirebaseDatabase.getInstance().getReference().child("PGOwner").child(auth.getUid()).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if(snapshot.exists()){
@@ -54,11 +54,11 @@ public class WelcomeActivity extends AppCompatActivity {
                 Intent intent = new Intent(WelcomeActivity.this, SelectUserActivity.class);
                 startActivity(intent);
             } else if(user[0] == 1) {
-                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, UserMainActivity.class);
                 startActivity(intent);
             } else if(user[0] == 2) {
-//                Intent intent = new Intent(WelcomeActivity.this, OwnerMainActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(WelcomeActivity.this, OwnerMainActivity.class);
+                startActivity(intent);
             }
 
         }

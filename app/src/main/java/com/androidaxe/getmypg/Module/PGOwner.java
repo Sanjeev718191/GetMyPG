@@ -1,16 +1,17 @@
 package com.androidaxe.getmypg.Module;
 
 public class PGOwner {
-    private String uId, name, profile, contact;
+    private String uId, name, profile, contact, userType;
 
     public PGOwner() {
     }
 
-    public PGOwner(String uId, String name, String profile, String contact) {
+    public PGOwner(String uId, String name, String profile, String contact, String userType) {
         this.uId = uId;
         this.name = name;
         this.profile = profile;
         this.contact = contact;
+        this.userType = userType;
     }
 
     public String getuId() {
@@ -43,5 +44,13 @@ public class PGOwner {
 
     public void setContact(String contact) {
         this.contact = contact;
+    }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 }
